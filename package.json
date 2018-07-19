@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-restful-api",
+  "version": "1.0.0",
+  "description": "walking through the basics of API design, how to set up the backbone of a REST API and how to structure code in a logical manner",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.4"
+  }
+}
