@@ -2,6 +2,13 @@ var express = require('express');
 var app = express();
 var db = require('./db');
 
+var UserController = require('./user/UserController');
+app.use('/users', UserController);
+
+// With app.use, you're telling the app to link it to the route /users.
+// Now, the / route within your user controller will get mapped to /users.
+
+
 module.exports = app;
 
 
