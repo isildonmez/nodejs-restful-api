@@ -1,0 +1,1 @@
+Built a RESTful API with Node.js: Walking through the basics of API design, how to set up the backbone of a REST API and how to structure the code in a logical manner. Followed [this article](https://hackernoon.com/restful-api-design-with-node-js-26ccf66eab09).
