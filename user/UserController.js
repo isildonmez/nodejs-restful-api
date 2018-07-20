@@ -47,4 +47,18 @@ router.delete('/:id', function (req, res) {
 
 });
 
+router.put(':/id', function (req, res) {
+
+  User.findByIdAndUpdate(req.params.id, req.body, {new: true}, function (err, user) {
+    if (err) return res.status(500).send("There was a problem updating the user.");
+    res.status(200).send("User " + user.name + " was updated.");
+  });
+
+})
+
+// A good practice when updating some values is
+// to request the updated value to be sent back to you.
+// {new:true} stands for the option of which version of the value
+// , in your case the user, you want to return.
+
 module.exports = router;
